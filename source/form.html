@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Официальный сайт приложения "Pink" для фильтрации изображений</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="main-header">
+    <nav class="main-header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--logo"><a href="" class="menu__logo-link">
+              <picture></picture>
+            </a></li>
+          <li class="menu__item"><a href="#"></a></li>
+          <li class="menu__item"><a href="#"></a></li>
+          <li class="menu__item"><a href="#"></a></li>
+          <li class="menu__item"><a href="#"></a></li>
+        </ul>
+      </nav>
+      <div class="main-header__title">
+        <h1 class="main-header__title-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+  </header>
+    <main>
+      <form action="" class="form">
+        <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <fieldset class="form__customer">
+          <legend class="visually-hidden">Укажите ФИО</legend>
+          <label for="name_1" class="form__label">фамилия</label>
+          <input type="text" id="name_1" name="surname" placeholder="Укажите фамилию*">
+          <label for="name_1" class="form__label">имя</label>
+          <input type="text" id="name_1" name="name" placeholder="Введите ваше имя*">
+          <label for="name_1" class="form__label">отчество</label>
+          <input type="text" id="name_1" name="patronymic" placeholder="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="form__apps">
+          <legend class="form__titles">с каким приложением путешествовали?</legend>
+          <input type="radio" id="ios" name="app">
+          <label for="ios" class="form__label form__label--apps">Pink для IOS</label>
+          <input type="radio" id="android" name="app">
+          <label for="android" class="form__label form--apps">Pink на Android</label>
+          <input type="radio" id="windows-phone" name="app">
+          <label for="windows-phone" class="form__label form--apps">Windows Phone</label>
+        </fieldset>
+        <fieldset class="form__contacts">
+          <legend class="form__titles">контактная информация</legend>
+          <div class="form__phone">
+            <input type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+            <label for="phone" class="form__label">Номер телефона</label>
+            <svg class="form__phone-icon"></svg>
+          </div>
+          <div class="form__mail">
+            <input type="text" id="mail" name="mail" placeholder="Введите почту*">
+            <label for="mail" class="form__label">Адрес почты</label>
+            <svg class="form__mail-icon"></svg>
+          </div>
+        </fieldset>
+        <fieldset class="form__travels">
+          <legend class="form__titles">ваши безбашенные достижения в путешествии</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <input type="checkbox" id="achievement_1" name="достижение">
+              <label for="achievement_1" class="form__label form__label--travels">Сделал селфи с акулой</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="achievement_2" name="достижение">
+              <label for="achievement_2" class="form__label form__label--travels">Видел Чака Норриса</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="achievement_3" name="достижение">
+              <label for="achievement_3" class="form__label form__label--travels">Удержал башню</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="achievement_4" name="достижение">
+              <label for="achievement_4" class="form__label form__label--travels">Обгорел на пляже</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="achievement_5" name="достижение">
+              <label for="achievement_5" class="form__label form__label--travels">Накупил сувеноиров</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="achievement_6" name="достижение">
+              <label for="achievement_6" class="form__label form__label--travels">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__emotion">
+          <legend class="form__titles">опишите свои эмоции</legend>
+          <textarea name="эмоции" id="" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        inputform__button[type=submit]{отправить форму}+p.form__footnote{*- обязательные для заполнения поля}
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrap">
+        <div class="main-footer__logo">
+          <a href="" class="main-footer__logo-link"><img src="" alt=""></a>
+          <div class="main-footer__social social">
+            <ul class="social-list">
+              <li class="social-item"><span class="visually-hidden">Мы в </span><a href="" class="social__link">
+                  <svg class="social__icon" width="" height="" aria-hidden="true" role="presentation"></svg>
+                </a></li>
+              <li class="social-item"><span class="visually-hidden">Мы в </span><a href="" class="social__link">
+                  <svg class="social__icon" width="" height="" aria-hidden="true" role="presentation"></svg>
+                </a></li>
+              <li class="social-item"><span class="visually-hidden">Мы в </span><a href="" class="social__link">
+                  <svg class="social__icon" width="" height="" aria-hidden="true" role="presentation"></svg>
+                </a></li>
+            </ul>
+            <div class="main-footer__copyright copyright">
+              <a href="" class="copyright__link">
+                <span class="copyright__text">Разработано</span>
+                <svg class="copyright__icon" role="img" width="" height=""></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
