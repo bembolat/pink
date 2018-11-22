@@ -1,0 +1,92 @@
+.stimulation {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .stimulation {
+    display: block;
+    width: 100%;
+    background-color: $white;
+    &__wrap {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 34px;
+    width: 620px;
+    margin: 0 auto;
+    background: url();
+  }
+    &__number {
+      position: absolute;
+      top: 170px;
+      left: 70px;
+      @include font (96px, 96px, 700);
+      color: $pink;
+    }
+    &__info {
+      width: 310px;
+      margin-left: auto;
+    }
+    &__title {
+      width: 171px;
+      @include font (30px, 36px, 700);
+      color: $black;
+    }
+    &__text {
+      @include font (14px, 24px, 400);
+      color: $black-light;
+    }
+    &__link {
+      @include font (14px, 24px, 400);
+      color: $pink;
+      text-decoration: underline;
+    }
+    &__timer {
+      position: absolute;
+      fill: #dedede;
+      left: 3px;
+    }
+    &__diagram {
+      position: absolute;
+      top: 130px;
+      left: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .stimulation {
+    padding-top: 20px;
+    background-color: $grey;
+    &__wrap {
+      width: 940px;
+    }
+    &__title {
+      width: 100%;
+    }
+    &__info {
+      width: 524px;
+    }
+    &__text {
+      width: 100%;
+      @include font (18px, 30px, 400);
+    }
+    &__number {
+      top: 150px;
+      left: 100px;
+    }
+    &__link {
+      @include font (18px, 30px, 400);
+    }
+    &__timer {
+      top: 0;
+      width: 298px;
+      height: 345px;
+    }
+    &__diagram {
+      width: 253px;
+      height: 253px;
+      top: 70px;
+      left: 25px;
+    }
+  }
+}

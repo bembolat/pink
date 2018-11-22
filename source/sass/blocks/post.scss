@@ -1,0 +1,189 @@
+.post {
+  padding: 20px 0;
+  background-color: $grey;
+  &__wrap-image {
+    margin: 0 20px;
+  }
+  &__editor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 30px;
+    width: 244px;
+    margin: 0 auto;
+  }
+  &__icon {
+    fill: #b5b9be;
+  }
+  &__icon--crop {
+    fill: $pink;
+  }
+  &__underline {
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: $black;
+    width: 240px;
+    margin-top: 38px;
+      &::before {
+        @include pseudo-element (15px, 15px);
+        border: 2px solid $pink;
+        border-radius: 50%;
+        background-color: $white;
+        top: -6px;
+        left: 165px;
+      }
+  }
+  &__submit {
+    border-top: 1px solid #b5b9be;
+    padding-top: 38px;
+    width: 280px;
+    margin: 0 auto;
+  }
+  &__button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    @include font (18px, 18px, 700);
+    padding: 18px 0;
+    border: 2px solid $pink;
+    border-radius: 60px;
+    color: $pink;
+    &--add {
+      margin-bottom: 14px;
+    }
+    &--cancel {
+      border-color: #b5b9be;
+      color: #b5b9be;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .post {
+    display: flex;
+    padding: 60px 20px 50px 20px;
+    justify-content: center;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 65px;
+    }
+    &__button {
+      &--cancel {
+        margin-bottom: 5px;
+      }
+      &--add {
+        margin-bottom: 24px;
+      }
+    }
+    &__underline {
+      display: none;
+    }
+    &__editor {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 200px;
+      width: 100%;
+      @include reset;
+      padding-top: 8px;
+      & li {
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #b5b9be;
+        padding-bottom: 14px;
+              &::before {
+        @include pseudo-element (203px, 2px);
+        display: block;
+        height: 2px;
+        left: 58px;
+        top: 25%;
+        background-color: $black;
+      }
+      &::after {
+        @include pseudo-element (15px, 15px);
+        border: 2px solid $pink;
+        border-radius: 50%;
+        background-color: $white;
+        top: 4px;
+        left: 165px;
+      }
+      &:last-child, &:last-child::after, &:last-child::before,  {
+        display: none;
+        border: none;
+      }
+      }
+    }
+    &__icon {
+      fill: $pink;
+        &--crop{
+          width: 22px;
+          height: 22px;
+        }
+        &--fill {
+          width: 24px;
+          height: 22px;
+        }
+        &--contrast {
+          width: 16px;
+          height: 16px;
+        }
+    }
+    &__submit {
+      border: none;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .post {
+    &__container {
+      width: 410px;
+      margin-left: 90px;
+    }
+    &__submit {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      width: 100%;
+    }
+    &__button {
+      width: 184px;
+    }
+    &__icon {
+      fill: $pink;
+        &--crop{
+          width: 44px;
+          height: 44px;
+        }
+        &--fill {
+          width: 48px;
+          height: 43px;
+        }
+        &--contrast {
+          width: 32px;
+          height: 32px;
+        }
+    }
+    &__editor {
+      & li {
+        padding-bottom: 5px;
+        &:nth-child(3n) {
+          padding-bottom: 9px;
+        }
+        &::before {
+          left: 90px;
+          top: 20px;
+          width: 71%;
+        }
+        &::after {
+          top: 13px;
+        }
+      }
+    }
+  }
+}

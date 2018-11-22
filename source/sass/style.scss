@@ -1,0 +1,29 @@
+//Основные
+@import "normalize.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
+
+//Header
+@import "blocks/main-header.scss";
+@import "blocks/menu.scss";
+@import "blocks/install.scss";
+
+//Footer 
+@import "blocks/main-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+//index(main)
+@import "blocks/presentation.scss";
+@import "blocks/comments.scss";
+@import "blocks/slider.scss";
+@import "blocks/price.scss";
+@import "blocks/stimulation.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map";
+//photo
+@import "blocks/photos.scss";
+@import "blocks/top.scss";
+@import "blocks/post.scss";
+//form
+@import "blocks/form.scss";

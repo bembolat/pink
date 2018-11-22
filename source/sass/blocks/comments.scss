@@ -1,0 +1,47 @@
+.comments {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 30px; 
+  text-align: center;
+    &__text {
+      display: none;
+      @include font (14px, 30px, 400);
+      @include reset;
+    }
+    &__name {
+      @include font (18px, 30px, 700);
+    }
+    &__info-user {
+      font-size: 14px;
+    }
+    &__toggle {
+      display: none;
+    }
+    &__slider {
+      margin: 0 auto;
+    }
+}
+
+@media (min-width: $tablet) {
+  .comments {
+    &__user {
+      display: flex;
+      flex-direction: column;
+    }
+    width: 640px;
+    &__text {
+      display: block;
+    }
+    &__name {
+      order: 1;
+      @include font (20px, 30px, 700);
+      color: $black;
+    }
+    &__slider {
+      order: 2;
+    }
+    &__info-user {
+      @include font (18px, 30px, 400);
+    }
+  }
+  }

@@ -1,0 +1,78 @@
+.top {
+  &__wrap-image {
+    position: relative;
+    text-align: center;
+      &::before {
+      position: absolute;
+      content: "Панорама дня";
+      display: block;
+      width: 140px;
+      background-color: $pink;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 12px;
+      top: 0;
+      right: 7%;
+      }
+  }
+  &__image {
+    width: 100%;
+  }
+  &__user {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 26px 19px;
+    margin-top: -6px;
+    background-color: $grey;
+    font-size: 14px;
+  }
+  &__name {
+    margin: 0;
+  }
+  &__text {
+    margin: 0;
+  }
+  &__heart {
+    order: 1;
+    font-size: 12px;
+    color: $pink;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet) {
+  .top {
+    &__wrap-image {
+      min-height: 510px;
+        &::before {
+          top: 55px;
+        }
+    }
+    &__user {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1045px;
+      padding-left: 27px;
+      padding-right: 27px;
+    }
+    &__name {
+      width: 30%;
+      order: -2;
+      text-align: left;
+    }
+    &__text {
+      width: 100%;
+      text-align: left;
+    }
+    &__heart {
+      width: 50%;
+      order: -1;
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  width: 70px;
+  height: 14px;
+    &__button {
+      width: 6px;
+      height: 6px; 
+      border-radius: 50%;
+      background-color: #bec2c7;
+        &:hover {
+          background-color: #7e868f;
+        }
+        &:active {
+          background-color: #e9ebec; 
+        }
+    }
+    & input[type=radio]:checked+.slider__button {
+      width: 12px;
+      height: 12px;
+      border: 4px solid $black-light;
+      background-color: $white;
+    }
+}

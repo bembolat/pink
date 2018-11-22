@@ -1,0 +1,78 @@
+.contacts {
+  padding-top: 45px;
+  text-align: center;
+    &__title {
+      width: 280px;
+      margin: 0 auto;
+      @include font (24px, 34px, 300);
+    }
+    &__info  {
+      margin-top: 40px;
+    }
+    &__text {
+      width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      @include font (24px, 30px, 300);
+      color: #d22856;
+    }
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    &__title {
+      width: 372px;
+      @include font (40px, 48px, 300);
+    }
+    &__info {
+      width: 640px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__phone {
+      display: inline-block;
+      width: 45%;
+      margin: 20px 0;
+    }
+    &__street {
+      display: inline-block;
+      width: 45%;
+    }
+    &__mail {
+      display: inline-block;
+      width: 45%;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    &__title {
+      width: 500px;
+      @include font (50px, 58px, 300);
+    }
+    &__info {
+      padding-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      width: 940px;
+      margin: 0 auto;
+        & p {
+          margin-top: 10px;
+        }
+    }
+    &__phone {
+      margin: 0;
+      order: -1;
+    }
+    &__street {
+      display: inline-block;
+      width: 45%;
+    }
+    &__mail {
+      order: -1;
+      width: 45%;
+    }
+  }
+}

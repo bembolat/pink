@@ -1,0 +1,17 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font ($size, $height, $regular: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $regular;
+}
+
+@mixin pseudo-element ($width, $height) {
+  position: absolute;
+  content: ""; 
+  width: $width;
+  height: $height;
+}

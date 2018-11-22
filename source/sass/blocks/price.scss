@@ -1,0 +1,132 @@
+.price {
+  background: url(..//img/bg-triangle-white.svg) no-repeat 60% top;
+  background-color: $grey;
+  padding: 124px 0 70px;
+    &__wrap {
+      width: 320px;
+      margin: 0 auto;
+      overflow: scroll;
+    }
+    &-table {
+      width: 940px;
+      &__head {
+        height: 98px;
+        background-color: $black-light;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+          &:first-child {
+            display: none;
+          }
+          &--hit {
+            position: relative;
+            background-image: url(..//img/bg-hit.svg);
+            background-repeat: no-repeat;
+            background-position: left top;
+          &::before {
+            content: "Хит";
+            position: absolute;
+            left: 7px;
+            top: 12px;
+            transform: rotate(-45deg);
+            font-size: 14px;
+          }
+        }
+        }
+      &__cell {
+        position: relative;
+        background-color: $white;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        &:first-of-type {
+          display: none;
+      }
+    }
+    &__cell--yes svg {
+      position: absolute;
+      top: 25%;
+      right: 19px;
+      fill: #3dc644;
+    }
+    &__cell--no svg {
+      fill: #f25b26;
+      position: absolute;
+      top: 25%;
+      right: 19px;
+    }
+      &__title {
+        display: block;
+        @include font (18px, 30px, 700);
+      }
+      &__bill {
+      @include font (24px, 30px, 300);
+    }
+    }
+    &__slider {
+      margin: 0 auto;
+      margin-top: 43px;
+    }
+}
+
+@media (min-width: $tablet) {
+  .price {
+    &__wrap {
+      width: 640px;
+    }
+    &-table {
+      width: 640px;
+      &__head:first-of-type {
+        display: block;
+        background-color: transparent;
+    }
+      &__cell:first-of-type {
+      display: block;
+    }
+    &__cell:nth-child(n+2) {
+    font-size: 0;
+  }
+  &__cell {
+    width: 160px;
+    padding: 7px 15px;
+    & svg {
+      top: 7px;
+      right: 50%;
+      margin-right: -15px;
+    }
+  }
+  }
+  }
+}
+
+@media (min-width: $desktop) {
+  .price {
+    background-size: 100% 120px;
+    &__wrap {
+      width: 940px;
+      overflow: auto;
+    }
+    &-table {
+      width: 940px;
+      &__head:first-of-type {
+        display: block;
+        background-color: transparent;
+    }
+      &__cell:first-of-type {
+      display: block;
+    }
+    &__cell:nth-child(n+2) {
+    font-size: 0;
+  }
+  &__cell {
+    width: 236px;
+    padding: 14px 20px;
+    font-size: 18px;
+    & svg {
+      top: 15px;
+    }
+  }
+  }
+  }
+}
